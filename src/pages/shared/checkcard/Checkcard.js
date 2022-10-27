@@ -4,6 +4,7 @@ import Card from 'react-bootstrap/Card';
 import { Link } from 'react-router-dom';
 
 const Checkcard = ({out}) => {
+  console.log(out)
     const {id, name, logo} = out;
     return (
         <Card className="mb-5 " style={{ width: '18rem' }}>

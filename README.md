@@ -1,8 +1,16 @@
 # Getting Started with Create React App
+# . REACT BOOSTRAP
+# .VANILLA CSS
+# .REACT ICONS
+# . FIREBASE
+# . AUTHTIZAITION
+# . GOOGLE
+# . GITHUB
+# .EMAIL AND PASSWORD
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+## Available  Scripts
 
 In the project directory, you can run:
 

@@ -3,12 +3,12 @@ import Checkcard from '../../shared/checkcard/Checkcard';
 import Coursecard from '../../shared/coursecard/Coursecard';
 
 const Checkout = () => {
-    const [checks, setcheck] = useState('');
+    const [checks, setCheck] = useState('');
 
     useEffect( () =>{
         fetch('https://server-mu-wine.vercel.app/allcourse')
         .then(res => res.json())
-        .then(data => setcheck(data));
+        .then(data => setCheck(data));
     }, [])
     return (
        <div>
