@@ -1,18 +1,21 @@
 import React, { useEffect, useState } from 'react';
+import { useLoaderData } from 'react-router-dom';
 import Checkcard from '../../shared/checkcard/Checkcard';
 import Coursecard from '../../shared/coursecard/Coursecard';
+import './Checkout.css'
 
 const Checkout = () => {
-    const [checks, setCheck] = useState('');
+    const tshirts = useLoaderData();
+    // const [checks, setCheck] = useState('');
 
-    useEffect( () =>{
-        fetch('https://server-mu-wine.vercel.app/allcourse')
-        .then(res => res.json())
-        .then(data => setCheck(data));
-    }, [])
+    // useEffect( () =>{
+    //     fetch('https://server-mu-wine.vercel.app/allcourse')
+    //     .then(res => res.json())
+    //     .then(data => setCheck(data));
+    // }, [])
     return (
-       <div>
-        <h1>category{checks.length}</h1>
+       <div className='find'>
+        {/* <h1>category{checks.length}</h1> */}
         {
             // checks.map(category => <Coursecard
             //     key={category.id}
@@ -21,14 +24,23 @@ const Checkout = () => {
 
            
         }
-        <div>
+        {/* <div>
             {
                 checks.map(out =><Checkcard 
                 key={out.id}
                 out={out}
                 ></Checkcard>)
             }
-        </div>
+        </div> */}
+        {
+            tshirts.map(tshirt =><Checkcard
+            
+            key={tshirt.id}
+            tshirt={tshirt}
+
+            ></Checkcard>)
+        }
+
        </div>
     );
 };

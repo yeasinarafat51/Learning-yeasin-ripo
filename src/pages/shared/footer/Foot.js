@@ -1,9 +1,10 @@
 import React from 'react';
+import { Image } from 'react-bootstrap';
 
 const footer = () => {
     return (
         <div>
-            <h2>footer</h2>
+            <Image src='https://www.sliderrevolution.com/wp-content/uploads/2021/04/footer12.jpg'></Image>
         </div>
     );
 };

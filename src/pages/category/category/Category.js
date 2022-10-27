@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { Link, useLoaderData } from 'react-router-dom';
+// import  ReactPrint from 'react-to-print';
 
 import Coursecard from '../../shared/coursecard/Coursecard';
 import Card from 'react-bootstrap/Card';
@@ -31,7 +32,13 @@ const Category = () => {
         <Card.Text>
         {discription}
         </Card.Text>
-        {/* <Button variant="info"><Link to='./'>Detalis</Link></Button> */}
+        {/* <div>
+            <div>
+
+            </div>
+            <ReactPrint trigger={(<button>print</button>)} />
+        </div> */}
+        <Button variant="info"><Link to='./'>Detalis</Link></Button>
        
       </Card.Body>
     </Card> 

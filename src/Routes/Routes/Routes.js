@@ -19,7 +19,7 @@ export const routes = createBrowserRouter([
         element: <Maiin></Maiin>,
         children: [
             {
-                path:'/home',
+                path:'/',
                 element:<Home></Home>
             },
             // {
@@ -47,7 +47,8 @@ export const routes = createBrowserRouter([
             },
             {
                 path:'/check',
-                element:<Checkout></Checkout>
+                element:<Checkout></Checkout>,
+                loader:() =>fetch('https://server-mu-wine.vercel.app/allcourse')
 
             },
             {
@@ -72,5 +73,9 @@ export const routes = createBrowserRouter([
             }
 
         ]
+    },
+    {
+        path:'*',
+        element:<div><h1>This is not Rout. It is 404 Page</h1></div>
     }
 ])
