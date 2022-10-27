@@ -4,7 +4,7 @@ const Blog = () => {
     return (
         <div>
             <h1>what is cors?</h1>
-            <p>Cross-Origin Resource Sharing (co) is an HTTP-header based mechanism that allows a server to indicate any origins (domain, scheme, or port) other than its own from which a browser should permit loading resources</p>
+            <p>Cross-Origin Resource Sharing (cor) is an HTTP-header based mechanism that allows a server to indicate any origins (domain, scheme, or port) other than its own from which a browser should permit loading resources</p>
             <h1>Why are you using firebase?</h1>
             <p>he Firebase Realtime Database lets you build rich, collaborative applications by allowing secure access to the database directly from client-side code. Data is persisted locally, and even while offline, realtime events continue to fire, giving the end user a responsive experience.</p>
             <h1>What other options do you have to implement authentication?</h1>
